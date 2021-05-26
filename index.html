@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Busca Cliente</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
   </head>
   <body>
     <nav class="nav-top text-white">
@@ -15,25 +19,96 @@
       </ul>
     </nav>
 
-    <nav class="nav-bar">
-      <a href="/"><img class="nav-bar__img" src="./assets/logo.png" alt="logo"></a>
-      <ul>
-        <li class="nav-bar__li">home</li>
-        <li class="nav-bar__li">empresa</li>
-        <li class="nav-bar__li">clientes</li>
-        <li class="nav-bar__li">contato</li>
-      </ul>
-    </nav>
+    <header class="header">
+      <a href="/"
+        ><img class="header__img" src="./assets/logo.png" alt="logo"
+      /></a>
+      <nav>
+        <ul class="header__menu">
+          <li><a href="#home">home</a></li>
+          <li><a href="#home">empresa</a></li>
+          <li><a href="#home">clientes</a></li>
+          <li><a href="#home">contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <div class="slider"></div>
+    <div class="your-class">
+      <div><img src="./assets/slider-1.jpg" alt=""></div>
+      <div><img src="./assets/slider-2.jpg" alt=""></div>
+    </div>
 
-    <div class="content"></div>
+    <div class="content">
+      <div>
+        <h2>TESTE DE HTML E CSS</h2>
+        <p>Quesitos de avaliação:</p>
+        <br />
+        <ul>
+          <li>Organizção do Código(Quanto mais limpo melhor);</li>
+          <li>Nível de detalhismo(Quanto mais identico melhor)</li>
+          <li>
+            Tempo de desenvolvimento( seja sincero ao enviar o tempo gasto);
+          </li>
+        </ul>
+        <br />
+        <p>Obrigado e boa sorte!</p>
+      </div>
+      <img src="./assets/logo.png" style="width: 325px; height: 212" alt="" />
+    </div>
 
-    <div class="hightlights"></div>
+    <h1 class="hightlights__title">boxes de destaque</h1>
+    <section class="hightlights">
+      <div>
+        <img src="./assets/logo.png" alt="" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus ac ante pellentesque gravida ut at augue. Suspendisse scelerisque metus at leo sodales, eu finibus lacus commodo.</p>
+        
+      </div>
+      <div>
+        <img src="./assets/logo.png" alt="" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus ac ante pellentesque gravida ut at augue. Suspendisse scelerisque metus at leo sodales, eu finibus lacus commodo.</p>
+      </div>
+      <div>
+        <img src="./assets/logo.png" alt="" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus ac ante pellentesque gravida ut at augue. Suspendisse scelerisque metus at leo sodales, eu finibus lacus commodo.</p>
+      </div>
+      <div>
+        <img src="./assets/logo.png" alt="" />
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus ac ante pellentesque gravida ut at augue. Suspendisse scelerisque metus at leo sodales, eu finibus lacus commodo.</p>
+      </div>
+    </section>
 
-    <div class="nav-bottom"></div>
-
-    <div class="footer"></div>
+    <div class="footer">
+      <nav>
+        <ul class="footer__menu">
+          <li><a href="#home">home</a></li>
+          <li><a href="#home">empresa</a></li>
+          <li><a href="#home">clientes</a></li>
+          <li><a href="#home">contato</a></li>
+        </ul>
+      </nav>
+      <h1>RODAPE</h1>
+    </div>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="script.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('.your-class').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 1,
+          adaptiveHeight: true,
+        });
+      });
+    </script>
   </body>
 </html>

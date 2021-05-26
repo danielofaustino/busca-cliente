@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-
 /* Global Styles */
 :root {
   --primary-color: #0e237e;
@@ -43,6 +42,13 @@ img {
   width: 100%;
 }
 
+h1 {
+  text-align: left;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  padding: 0 10%;
+}
+
 /* Utilities */
 .container {
   max-width: 1100px;
@@ -71,51 +77,111 @@ img {
 .nav-top__li {
   display: inline;
   margin: 0 0.5rem;
-  
 }
 
-.nav-bar {
+.header {
   display: flex;
-  justify-content:space-between;
-  align-items:flex-end;
-  padding: 0 var(--padding-y);
-  flex-wrap:wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
 }
 
-.nav-bar__img {
-  width: 10rem;
+.header__img {
+  width: 120px;
 }
 
-.nav-bar__li {
-  display: inline;
+.header__menu {
+  display: flex;
+}
+
+.header__menu li {
+  margin-left: 10px;
+}
+
+.header__menu li a {
+  display: block;
+  padding: 10px;
   text-transform: uppercase;
-  color: var(--light-color);
-  margin: 0 0.1rem;
 }
 
 .slider {
 }
 
 .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  margin: 2rem 0;
 }
 
 .hightlights {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 10%;
+  margin: 2rem 0;
+  
+}
+.hightlights__title {
+  margin-top: 2rem;
+}
+.hightlights > div {
+  flex: 1 1 196px;
 }
 
-.nav-bottom {
+.hightlights img {
+  padding: 1rem;
+  margin: auto;
+  max-width: 196px;
+  display: block;
 }
+.hightlights p {
+  text-align: justify;
+  margin: 0.2em;
+  text-align: center;
+}
+
+
 
 .footer {
+  background-color: var(--dark-color);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
 }
 
+.footer h1 {
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+}
 
+.footer__menu {
+  display: flex;
+  padding: 1rem 0;
+}
+
+.footer__menu li a {
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+  color: white;
+}
 
 /* Media Querys */
 
 @media only screen and (max-width: 400px) {
-  
- 
-
- 
- 
+  .header__menu li {
+    margin-left: 0;
+  }
+  .header {
+    display: flex;
+    padding: 0 3%;
+  }
 }

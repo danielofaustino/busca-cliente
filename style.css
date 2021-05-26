@@ -5,9 +5,6 @@
   --primary-color: #0e237e;
   --dark-color: #353d40;
   --light-color: #aaa5a5f6;
-  --danger-color: #cc3a48;
-  --success-color: #28a745;
-
   --padding-y: 10%;
 }
 
@@ -122,7 +119,6 @@ h1 {
   flex-wrap: wrap;
   padding: 0 10%;
   margin: 2rem 0;
-  
 }
 .hightlights__title {
   margin-top: 2rem;
@@ -142,8 +138,6 @@ h1 {
   margin: 0.2em;
   text-align: center;
 }
-
-
 
 .footer {
   background-color: var(--dark-color);

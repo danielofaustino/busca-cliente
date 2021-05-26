@@ -5,13 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Busca Cliente</title>
+
+    <!-- css -->
     <link rel="stylesheet" href="style.css" />
 
+    <!-- slider css -->
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-    
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+    <!-- favicon -->
+    <link
+      rel="icon"
+      href="./assets/favicon/favicon-16x16.png"
+      type="image/gif"
+      sizes="16x16"
+    />
   </head>
+
+
   <body>
+
+    <!-- nav-top -->
     <nav class="nav-top text-white">
       <ul>
         <li class="nav-top__li">11 1234-1234</li>
@@ -19,6 +33,7 @@
       </ul>
     </nav>
 
+    <!-- header -->
     <header class="header">
       <a href="/"
         ><img class="header__img" src="./assets/logo.png" alt="logo"
@@ -33,11 +48,13 @@
       </nav>
     </header>
 
-    <div class="your-class">
-      <div><img src="./assets/slider-1.jpg" alt=""></div>
-      <div><img src="./assets/slider-2.jpg" alt=""></div>
+    <!-- slider -->
+    <div class="slider">
+      <div><img src="./assets/slider-1.jpg" alt="" /></div>
+      <div><img src="./assets/slider-2.jpg" alt="" /></div>
     </div>
 
+    <!-- content -->
     <div class="content">
       <div>
         <h2>TESTE DE HTML E CSS</h2>
@@ -56,26 +73,48 @@
       <img src="./assets/logo.png" style="width: 325px; height: 212" alt="" />
     </div>
 
+    <!-- hightlights -->
     <h1 class="hightlights__title">boxes de destaque</h1>
     <section class="hightlights">
       <div>
         <img src="./assets/logo.png" alt="" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus ac ante pellentesque gravida ut at augue. Suspendisse scelerisque metus at leo sodales, eu finibus lacus commodo.</p>
-        
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus
+          lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus
+          ac ante pellentesque gravida ut at augue. Suspendisse scelerisque
+          metus at leo sodales, eu finibus lacus commodo.
+        </p>
       </div>
       <div>
         <img src="./assets/logo.png" alt="" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus ac ante pellentesque gravida ut at augue. Suspendisse scelerisque metus at leo sodales, eu finibus lacus commodo.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus
+          lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus
+          ac ante pellentesque gravida ut at augue. Suspendisse scelerisque
+          metus at leo sodales, eu finibus lacus commodo.
+        </p>
       </div>
       <div>
         <img src="./assets/logo.png" alt="" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus ac ante pellentesque gravida ut at augue. Suspendisse scelerisque metus at leo sodales, eu finibus lacus commodo.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus
+          lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus
+          ac ante pellentesque gravida ut at augue. Suspendisse scelerisque
+          metus at leo sodales, eu finibus lacus commodo.
+        </p>
       </div>
       <div>
         <img src="./assets/logo.png" alt="" />
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus ac ante pellentesque gravida ut at augue. Suspendisse scelerisque metus at leo sodales, eu finibus lacus commodo.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut in metus
+          lacinia, hendrerit tellus vitae, maximus nunc. Pellentesque in tellus
+          ac ante pellentesque gravida ut at augue. Suspendisse scelerisque
+          metus at leo sodales, eu finibus lacus commodo.
+        </p>
       </div>
     </section>
+
+    <!-- footer -->
 
     <div class="footer">
       <nav>
@@ -88,6 +127,10 @@
       </nav>
       <h1>RODAPE</h1>
     </div>
+
+
+    <!-- slider scripts -->
+
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -101,7 +144,7 @@
 
     <script type="text/javascript">
       $(document).ready(function () {
-        $('.your-class').slick({
+        $('.slider').slick({
           dots: true,
           infinite: true,
           speed: 300,
@@ -110,5 +153,7 @@
         });
       });
     </script>
+
+    
   </body>
 </html>
